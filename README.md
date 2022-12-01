@@ -1,6 +1,9 @@
 # Advent
 
-# Instructions to run
+## Instructions to run
+
+Download inputs
+> mix advent.download <cookie> # To implement
 
 Run a shell:
 > iex -S mix
@@ -11,7 +14,7 @@ Run a specific day:
 Run every day
 > iex(2) Advent.run(:all)
 
-TODO:
+## TODO
 
 - Add mix command to download inputs
 - Add error handling (module missing, input missing)
