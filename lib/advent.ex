@@ -2,6 +2,8 @@ defmodule Advent do
   @solution_by_days [One]
                     |> Enum.map(&Module.concat([Advent.Solution, &1]))
 
+  def run(day \\ 1)
+
   def run(:all) do
     Enum.each(1..25, &Advent.run(&1))
   end
