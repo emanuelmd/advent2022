@@ -8,6 +8,7 @@ defmodule Advent.Solution.One do
   def solve_first(input) do
     parse_input(input)
     |> Enum.max()
+    |> to_string()
   end
 
   @impl Advent.Solution
@@ -16,6 +17,7 @@ defmodule Advent.Solution.One do
     |> Enum.sort(:desc)
     |> Enum.take(3)
     |> Enum.sum()
+    |> to_string()
   end
 
   defp parse_input(input) do

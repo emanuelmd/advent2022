@@ -27,6 +27,8 @@ defmodule Advent do
         |> to_string()
 
       IO.puts("Day #{day} - second solution: #{result_two}")
+    else
+      IO.puts("Day #{day} - missing")
     end
   end
 
