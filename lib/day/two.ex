@@ -28,17 +28,17 @@ defmodule Advent.Solution.Two do
   def solve_first(input) do
     parse_input(input)
     |> Enum.reduce(0, fn {opponent, you}, score ->
-      your_move = @symbol_to_rps[you]
-      winner = choose_winner(opponent, your_move)
+      you = @symbol_to_rps[you]
+      winner = choose_winner(opponent, you)
 
       outcome_score =
         case winner do
-          ^your_move -> 6
+          ^you -> 6
           :draw -> 3
           ^opponent -> 0
         end
 
-      score + @rps_to_points[your_move] + outcome_score
+      score + @rps_to_points[you] + outcome_score
     end)
     |> to_string()
   end
