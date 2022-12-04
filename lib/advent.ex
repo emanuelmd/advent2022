@@ -1,5 +1,5 @@
 defmodule Advent do
-  @solution_by_days [One, Two, Three]
+  @solution_by_days [One, Two, Three, Four]
                     |> Enum.map(&Module.concat([Advent.Solution, &1]))
 
   def run(day \\ 1)
